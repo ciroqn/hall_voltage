@@ -4,6 +4,8 @@ import pandas as pd
 from scipy.stats import linregress
 import matplotlib.pyplot as plt
 
+################# Part I: Calibration (finding mag. field strength at different coil current measurements) ####################
+
 df = pd.read_csv("calibration_hall.csv", sep=",", header=2)
 
 df 
