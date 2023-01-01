@@ -12,7 +12,7 @@ df
 
 # get data for average magnetic field strength (in mT) and coil current (in A) from calibration
 with open("calibration_hall.csv", mode="r") as calib_points:
-    avg_mag = df["Average"]
+    avg_mag = df["Average"]  # or calib_points["Average"] - doesn't matter...
     coil_current = df["I_c / A"]
     
 # convert to arrays
