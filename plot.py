@@ -64,7 +64,7 @@ bstrength_T = df_hall["B / mT"]*10**-3
 
 # we want to find gradient of graph, R_H, so we find the variable, x, which consists of a range of terms i.e. ( I_t * B ) / t
 def x_axis(B):
-    # Only variable here is the vary mag. field strength which is dependent on coil current (measured in Part I
+    # Only variable here is the varying mag. field strength which is dependent on coil current (measured in Part I
     # transverse current at a constant 10 A
     I_t = 10
     # thickness of sample i.e. 50 micrometres
