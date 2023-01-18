@@ -36,8 +36,14 @@ plt.show()
 # Hall voltage in volts
 vh_yaxis = df["V_H / muV"]*10**-6
 
+# alternative data: drop last row since current showed 9.7 A and not 10.0 A (not used here)
+vh_yaxis_drop = vh_yaxis.drop(20, axis="index")
+
 # magnetic field strength in Teslas
 bstrength_T = df["B / mT"]*10**-3
+
+# drop last row for reason above (not used here)
+bstrength_T_drop = bstrength_T.drop(20, axis="index")
 
 # we want to find gradient of graph, so we find the variable, x, which consists of a range of terms
 def x_axis(B):
